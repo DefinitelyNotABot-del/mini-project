@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint</title>
+    <link rel="stylesheet" href="css/complain.css"> <!-- Linking to external CSS (if any) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+  </head>
+
+
+  <body>
+    <!-- Top Wave Design -->
+    <div class="top-design">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="url(#gradient-top)" fill-opacity="1"
+                d="M0,128L60,160C120,192,240,256,360,272C480,288,600,256,720,224C840,192,960,160,1080,144C1200,128,1320,128,1380,128L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+            <defs>
+                <linearGradient id="gradient-top" x1="0%" y1="0%" x2="100%">
+                    <stop offset="0%" style="stop-color:#ffcc00;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff33cc;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <!-- Complaint Form -->
+    <div class="content">
+        <center>
+            <h1>Register Your Complaint</h1>
+            <form id="complaintForm" action="../voting system001/api/complaint.php" method="POST">
+                <label>Email (through which we can give response)</label>
+                <input type="email" name="email" placeholder="Enter email" required>
+
+                <label>Subject of your complaint</label>
+                <input type="text" name="subject" placeholder="Enter subject" required>
+
+                <label>Explain the issue you are facing</label>
+                <textarea name="issue" placeholder="Describe your issue" required></textarea>
+
+                <br><br>
+                <input type="submit" value="Submit Complaint">
+            </form>
+        </center>
+    </div>
+
+    <script>
+      document.getElementById('complaintForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting immediately
+          
+          // Show the alert first
+          alert("Form submitted successfully");
+          
+          // After the alert, submit the form manually
+          this.submit(); // This will now redirect to complaint.php
+      });
+    </script>
+  
+
+    <!-- Bottom Wave Design -->
+    <div class="bottom-design">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="url(#gradient-bottom)" fill-opacity="1"
+                d="M0,288L60,272C120,256,240,224,360,192C480,160,600,96,720,64C840,32,960,32,1080,48C1200,64,1320,96,1380,112L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+            </path>
+            <defs>
+                <linearGradient id="gradient-bottom" x1="0%" y1="0%" x2="100%">
+                    <stop offset="0%" style="stop-color:#ff33cc;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <!-- Footer -->
+      
+    <footer>
+      <button onclick="navigateTo('about.html')" style="background-color: transparent; border: none; color: white; font-size: 20px; cursor: pointer;">
+          <i class="fa-solid fa-circle-info" style="color: #f7f7f8;"></i>
+      </button>
+
+      <button onclick="navigateTo('home.html')" style="background-color: transparent; border: none; color: white; font-size: 20px; cursor: pointer;">
+          <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+      </button>
+
+      <button onclick="navigateTo('profile.html')" style="background-color: transparent; border: none; color: white; font-size: 20px; cursor: pointer;">
+          <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+      </button>
+    </footer>
+
+  <style>
+      /* Hover effect for buttons */
+      footer button:hover {
+          opacity: 0.7;
+      }
+  </style>
+  <script src="home.js">
+      
+  </script>
+  
+    <script src="js/complain.js"></script> <!-- Linking to external JavaScript (if any) -->
+  </body>
+
+</html>

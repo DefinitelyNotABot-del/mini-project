@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask AI - Chatb</title>
+    <link rel="stylesheet" href="css/aibot.css">
+</head>
+<body>
+   
+
+    <!-- Chatbot Button -->
+    <div id="chatButton" onclick="toggleChat()">
+        
+    </div>
+
+    <!-- Chatbot Popup -->
+    <div id="chatPopup" class="chat-popup">
+        <div class="chat-header">
+            <h2>Ask AI</h2>
+            <span class="close-btn" onclick="toggleChat()">×</span>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chatbox" id="chatbox">
+                <div class="messages" id="messages"></div>
+            </div>
+            <input type="text" id="userInput" placeholder="Type a message..." onkeypress="checkEnter(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+
+    
+    
+    <script src="js/aibot.js"></script>
+</body>
+</html>

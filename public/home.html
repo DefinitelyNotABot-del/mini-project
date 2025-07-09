@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Home</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="logo.jpg" alt="Department Logo" class="logo">
+    <h1>Department of CSAI</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="card blue" onclick="navigateTo('update.html')">
+      <div class="card-icon">
+        <img src="ui.png" alt="Update">
+      </div>
+      <p>UPDATES</p>
+    </div>
+    <div class="card green" onclick="navigateTo('electifier.html')">
+      <div class="card-icon">
+        <img src="ei.png" alt="Electifier">
+      </div>
+      <p>ELECTIFIER</p>
+    </div>
+    <div class="card yellow" onclick="navigateTo('complain.html')">
+      <div class="card-icon">
+        <img src="ci.png" alt="Complain Hub">
+      </div>
+      <p>COMPLAIN HUB</p>
+    </div>
+    <div class="card purple" onclick="navigateTo('aibot.html')">
+      <div class="card-icon">
+        <img src="ai.png" alt="AI Assistant">
+      </div>
+      <p>AI ASSISTANT</p>
+    </div>
+    <div class="card pink" onclick="navigateTo('i.html')">
+      <div class="card-icon">
+        <img src="di.png" alt="Dock-Check">
+      </div>
+      <p>Dock-Check</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <button onclick="navigateTo('about.html')"><i class="fa-solid fa-circle-info" style="color: #f7f7f8;"></i></button>
+    <button onclick="navigateTo('home.html')"><i class="fa-solid fa-house" style="color: #ffffff;"></i></button>
+    <button onclick="navigateTo('profile.html')"><i class="fa-solid fa-user" style="color: #ffffff;"></i></button>
+  </footer>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

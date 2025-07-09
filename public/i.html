@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Verification System</title>
+    <link rel="stylesheet" href="css/s.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Department Logo" class="logo">
+        <h1>Department of CSAI</h1>
+    </header>
+    
+    <div class="container">
+        <h1>Document Verification System</h1>
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept="image/*" />
+            <button onclick="verifyDocument()">Verify Document</button>
+        </div>
+        <div class="result-section">
+            <p id="resultText">Result: </p>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="navigateTo('about.html')"><i class="fa-solid fa-circle-info" style="color: #f7f7f8;"></i></button>
+        <button onclick="navigateTo('home.html')"><i class="fa-solid fa-house" style="color: #ffffff;"></i></button>
+        <button onclick="navigateTo('profile.html')"><i class="fa-solid fa-user" style="color: #ffffff;"></i></button>
+    </footer>
+
+    <script src="js/sss.js"></script>
+</body>
+</html>

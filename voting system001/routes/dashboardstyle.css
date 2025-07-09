@@ -1,0 +1,67 @@
+body{
+    
+   
+    background-image: url("dashback001.jpg") ;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 110px;
+    box-sizing: border-box;
+  }
+  
+  header img.logo {
+    height: 90px;
+    position: absolute;
+    left: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to right, #ff33cc, #ffcc00);
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #ff33cc, #ffcc00);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  footer button img {
+    width: 40px;
+    height: 40px;
+  }

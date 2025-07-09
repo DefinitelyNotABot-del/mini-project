@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 110px;
+    box-sizing: border-box;
+}
+
+header img.logo {
+    height: 90px;
+    position: absolute;
+    left: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to right, #ff33cc, #ffcc00);
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Card Styles */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 20, 147, 0.6); /* Pink shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 20, 147, 0.8);
+}
+
+.card-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image is scaled to fit while maintaining aspect ratio */
+    object-position: center; /* Center the image */
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.card-content h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-content a.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Pink button */
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.card-content a.button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #ff33cc, #ffcc00);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+footer button img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .card-image,
+    .card-content {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+    }
+
+    .card-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-content h1 {
+        font-size: 1.5em;
+    }
+
+    .card-content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header img.logo {
+        height: 70px;
+    }
+
+    .card-content h1 {
+        font-size: 1.2em;
+    }
+
+    .card-content p {
+        font-size: 0.9em;
+    }
+
+    .card-content a.button {
+        font-size: 0.9em;
+    }
+}

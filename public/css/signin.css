@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hwb(0 97% 1%);
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .top-design, .bottom-design {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .top-design {
+    top: 0;
+  }
+  
+  .bottom-design {
+    bottom: 0;
+  }
+  
+  .content {
+    background: #ffffff;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(197, 12, 169, 0.903);
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #ff33cc;
+    box-shadow: 0 0 5px rgba(255, 51, 204, 0.5);
+  }
+  
+  .forgot-password {
+    color: #ff33cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(45deg, #ff33cc, #ffcc00);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff33cc);
+  }
+  
+  .create-account {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .create-account a {
+    color: #ff33cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .create-account a:hover {
+    text-decoration: underline;
+  }
+  
+  #error-message {
+    color: red;
+    display: none;
+  }
+  
