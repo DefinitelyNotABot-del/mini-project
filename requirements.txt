@@ -1,0 +1,29 @@
+# Python Dependencies for CSAI Department Management System
+# Document Verification & Machine Learning Module
+
+# Web Framework
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# Computer Vision & Image Processing
+opencv-python==4.8.1.78
+numpy==1.24.3
+
+# OCR (Optical Character Recognition)
+pytesseract==0.3.10
+
+# Machine Learning
+scikit-learn==1.3.0
+joblib==1.3.2
+
+# Additional ML Dependencies
+scipy==1.11.2
+
+# CORS support for Flask
+flask-cors==4.0.0
+
+# Optional: For API improvements
+python-dotenv==1.0.0
+
+# Optional: For better error handling and logging
+colorama==0.4.6
