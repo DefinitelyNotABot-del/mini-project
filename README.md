@@ -29,7 +29,6 @@
 - [Usage](#-usage)
 - [API Endpoints](#-api-endpoints)
 - [Modules](#-modules)
-- [Screenshots](#-screenshots)
 - [Team](#-team)
 - [License](#-license)
 
@@ -361,22 +360,6 @@ ML-powered document authentication system:
 2. Feature extraction (OCR text length, ORB keypoints)
 3. SVM classification (Real vs Fake)
 4. Result with confidence score
-
----
-
-## 📸 Screenshots
-
-### Landing Page
-![Landing Page](public/logo.jpg)
-
-### Dashboard
-The home dashboard provides quick access to all modules with a colorful, intuitive interface.
-
-### Complaint System
-Users can submit and track complaints efficiently through a simple form interface.
-
-### Document Verification
-AI-powered system analyzes uploaded documents and provides instant verification results.
 
 ---
 
