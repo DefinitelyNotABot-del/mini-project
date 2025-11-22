@@ -369,37 +369,46 @@ This project was developed as an academic collaboration by a team of four studen
 
 ### Development Team
 
-**🗳️ Voting System Module**
+**Full-Stack Developer - Voting & Complaint Systems**
 - **Lead Developer:** [@DefinitelyNotABot-del](https://github.com/DefinitelyNotABot-del)
-- Implemented secure electronic voting platform with PHP backend
-- Developed MySQL database integration and voter authentication
-- Created real-time vote counting and result visualization system
-- Built admin dashboard for election management
+- **Voting System (Complete):**
+  - Implemented secure electronic voting platform with PHP backend
+  - Developed MySQL database integration and voter authentication
+  - Created real-time vote counting and result visualization
+  - Built complete frontend interface and admin dashboard
+- **Complaint Management System:**
+  - Developed complete backend API for complaint submission
+  - Implemented MongoDB integration for complaint storage
+  - Created Express.js routes and request handling
+- **Frontend Development:**
+  - Designed and implemented voting system user interface
+  - Created responsive complaint submission forms
+  - Built admin dashboards for both systems
 
-**🔐 Authentication & Backend Services**
-- Developed user registration, login, and password reset functionality
-- Implemented MongoDB database integration with Mongoose ODM
-- Created Express.js server architecture and RESTful API endpoints
-- Built complaint management system backend
+**Authentication Module Developer**
+- Developed user registration and login system
+- Implemented password reset functionality
+- Created Express.js authentication routes and middleware
+- Integrated MongoDB for user data management
 
-**🤖 Document Verification (AI/ML Module)**
-- Designed and trained machine learning model for document authentication
-- Implemented OpenCV image processing and Tesseract OCR integration
-- Created SVM classifier for real/fake document detection
-- Developed feature extraction algorithms (text length, ORB keypoints)
+**AI/ML Module Developer**
+- Designed machine learning model for document verification
+- Implemented OpenCV image processing and Tesseract OCR
+- Created SVM classifier for document authentication
+- Developed Flask API for ML model integration
 
-**🎨 Frontend & User Interface**
-- Designed responsive and intuitive user interface across all modules
-- Implemented dashboard navigation and seamless module integration
-- Created custom CSS animations, gradients, and visual effects
-- Ensured cross-browser compatibility and mobile responsiveness
+**Frontend & UI/UX Developer**
+- Designed main dashboard and navigation system
+- Created responsive layouts across all modules
+- Implemented CSS animations and visual effects
+- Ensured cross-browser compatibility
 
 ### Project Development
 - **Duration:** Academic Year 2024
 - **Institution:** Computer Science & Artificial Intelligence Department
 - **Type:** Collaborative Academic Project
 
-Each team member contributed to testing, debugging, documentation, and integration throughout the development cycle.
+Each team member contributed to testing, debugging, and integration throughout the development cycle.
 
 ---
 
